@@ -16,14 +16,14 @@ let package = Package(
             targets: ["LottieUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-ios.git", "3.3.0"..."3.4.4")
+        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", "3.3.0"..."3.4.4")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "LottieUI",
-            dependencies: ["lottie-ios"]),
+            dependencies: ["Lottie"]),
         .testTarget(
             name: "LottieUITests",
             dependencies: ["LottieUI"]),
