@@ -146,6 +146,7 @@ class LUView: UIView {
         aniView.contentMode = .scaleAspectFit
         aniView.loopMode = state.loopMode
         aniView.animationSpeed = state.speed
+        aniView.backgroundBehavior = .pauseAndRestore
         self.addSubview(aniView)
     }
 }
